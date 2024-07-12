@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+#location-input {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    width: 70%;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#location-input:focus {
+    outline: none;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    background: #0072ff;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f39c12;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.weather-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.weather-details p:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
