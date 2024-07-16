@@ -3,6 +3,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,6 +11,33 @@ body {
     background: linear-gradient(to right, #00c6ff, #0072ff);
     color: white;
     overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 .container {
@@ -21,6 +49,7 @@ body {
     max-width: 400px;
     width: 100%;
     animation: fadeIn 1s ease-in-out;
+    margin-top: 60px; /* Adjusted to account for the fixed navbar */
 }
 
 h1 {
